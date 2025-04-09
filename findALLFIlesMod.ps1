@@ -25,7 +25,7 @@ $sortedFiles | Select-Object @{Name="File Create Time";Expression={$_.CreationTi
 			   @{Name="Last Modified Time";Expression={$_.LastWriteTime}},
                            @{Name="Full File Path";Expression={$_.DirectoryName}}, 
                            @{Name="File Name";Expression={$_.Name}} | 
-    Export-Csv -Path $OutputFile_FullPath -NoTypeInformation
+Export-Csv -Path $OutputFile_FullPath -NoTypeInformation
 
 Write-Host "CSV file has been generated: $OutputFile_FullPath"
 
