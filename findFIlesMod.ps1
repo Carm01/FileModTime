@@ -10,7 +10,7 @@ $OutputFile_FullPath = Join-Path -Path $OutputDirectory -ChildPath $outputFile
 
 # Define the list of valid extensions and include 'web.config'
 $validExtensions = @("*.aspx", "*.css", "*.png", "*.jpg", "*.gif", "*.vb", "*.vbhtml", "*.html", "*.cshtml", "web.config")
-<# $validExtensions = @("*.png", "*.jpg", "*.gif") #>
+
 # Ensure the directory exists
 if (-Not (Test-Path -Path $directory)) {
     Write-Host "The specified directory does not exist."
