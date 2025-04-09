@@ -1,5 +1,5 @@
 # Set the directory to search (change this to the desired directory)
-$directory = "\\your/path/here"
+$directory = "\\your\path\here"
 
 $OutputDirectory = "./" # Set the output directory (change this to the desired output directory) - Default is current directory
 
