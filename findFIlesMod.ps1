@@ -25,7 +25,7 @@ $sortedFiles = $files | Sort-Object LastWriteTime  -Descending
 
 # Prepare CSV output (Exclude file name from full path)
 $sortedFiles | Select-Object @{Name="File Create Time";Expression={$_.CreationTime}},
-							@{Name="Last Modified Time";Expression={$_.LastWriteTime}},
+			   @{Name="Last Modified Time";Expression={$_.LastWriteTime}},
                            @{Name="Full File Path";Expression={$_.DirectoryName}}, 
                            @{Name="File Name";Expression={$_.Name}} | 
     Export-Csv -Path $OutputFile_FullPath -NoTypeInformation
