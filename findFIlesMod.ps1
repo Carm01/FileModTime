@@ -5,7 +5,7 @@ $OutputDirectory = "./" # Set the output directory (change this to the desired o
 
 # Set the output CSV file name
 <# $outputFile = "output.csv" #>
-$outputFile = ("WebsiteFileLookup_" + $(([System.Uri]$directory).host) + "_" + $(Get-Date -Format yyyyMMdd) + ".csv")
+$outputFile = ("FileLookup_" + $(([System.Uri]$directory).host) + "_" + $(Get-Date -Format yyyyMMdd) + ".csv")
 $OutputFile_FullPath = Join-Path -Path $OutputDirectory -ChildPath $outputFile
 
 # Define the list of valid extensions and include 'web.config'
