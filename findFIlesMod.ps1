@@ -32,6 +32,7 @@ $sortedFiles | Select-Object @{Name="File Create Time";Expression={$_.CreationTi
 
 Write-Host "CSV file has been generated: $OutputFile_FullPath"
 
-# Close the PowerShell window after completion
+# Pauses
 Pause
+# Close the PowerShell window after completion
 exit
